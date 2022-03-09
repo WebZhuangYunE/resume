@@ -1,0 +1,370 @@
+/*--
+Author: ZhuangYunE
+Author URL:
+Date：2022-3-8
+--*/
+
+/* base-set */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 0.625rem;
+}
+
+
+
+body{
+    font:1rem 'Overlock', cursive;
+    color: #999;
+}
+body a {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    text-decoration: none;
+}
+a,a:link,a:visited,a:hover, a:active{
+    text-decoration: none;
+}
+ol,ul,li,dl,dt,dd{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* base-set */
+/* banner */
+.my-banner{
+    background: rgba(247, 197, 106, 0.35);
+    padding: 4rem;
+}
+
+.my-banner img{
+    width: 80%;
+    box-shadow: 1px 5px 6px rgba(0, 0, 0, 0.4);
+    border: 3px solid rgba(255, 255, 255, 0.68);     
+}
+
+.myself-info{
+    color: #008B8B;
+    letter-spacing: 0.3rem;
+}
+.myself-info h6{
+    font-size: 1.3rem;
+}
+.myself-info a{
+    color:#008B8B;
+}
+.myself-info a:hover {
+    color: #fff;
+    font-size: 1.6rem;
+}
+.info-list{
+    border-top:1px solid rgba(255, 255, 255, 0.68);
+    line-height: 2.5rem;
+    padding: 0.5rem 0 0;
+}
+
+.info-list ul li {
+    display: inline-block;
+    font-size: 1.4rem;
+}
+/* banner-css end */
+.my-navbar {
+    margin: 0;
+    font-size: 1.5rem;
+    background: #008B8B;
+    border-radius: 0;
+    
+}
+.my-navbar .navbar-toggle,
+.my-navbar a {
+    color: #fff;
+}
+
+.my-navbar li a:hover,
+.my-navbar li a.active,
+.my-navbar li a:focus,
+.my-navbar .active {
+    color: #008B8B;
+    background: #fff;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+}
+
+/* my-navbar end */
+
+/* info-details信息详情 */
+
+ #info-details{   
+    color: #999;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+ }
+#info-details>section {   
+    padding: 4rem 1rem;
+    overflow: hidden;
+}
+.info-items div.row{
+    padding: 1rem ;
+}
+#info-details>section:nth-child(even) {
+    font-size: 1.8rem;
+    background: #000;
+}
+
+ #info-details h3,
+ #info-details h4 {  
+    text-align: center;
+    color: #008B8B;
+    padding-bottom: 0.2em;
+    
+}
+ #info-details h3{
+    font-size: 4rem;   
+    border-bottom: 4px double rgba(247, 197, 106, 0.35);
+    margin-bottom: 1em;
+ }
+#info-details p {
+    text-indent: 3rem;
+
+}
+  #honor {
+      border: 3px double #008B8B;
+      padding: 1em 2em;
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+  }
+ #honors h4 {
+    font-size: 3rem;
+ }
+
+ #honor li span{
+    padding-right:1rem ;
+ }
+/* 自我评价end */
+
+#info-details .info-items h4 {
+    font-size: 1.4rem;
+    background: rgb(0, 139, 139);
+    display: inline-block;
+    padding: .6em 1.2rem;
+    color: #fff;
+    position: relative;
+}
+#info-details .info-items h4:before {
+    height: 0;
+    position: absolute;
+    content: '';
+    top: 6px;   
+    border-style: solid;
+    
+}
+.info-items div.row:nth-child(even) h4:before {
+    right: -14px;
+    border-width: 10px 0 10px 16px;
+    border-color: transparent transparent transparent rgb(0, 139, 139);
+}
+
+.info-items div.row:nth-child(odd) h4:before {
+    left:-24px;
+    border-width: 10px 16px 10px 10px;
+    border-color:   transparent rgb(0, 139, 139) transparent transparent;
+}
+
+.info-content {
+    width: 95%;
+    float: right;
+    padding: 0 5rem;
+    box-sizing: border-box;
+}
+ .info-items h5{
+    display: inline-block;
+    color: #F7E612;
+    margin-bottom: 1em;
+    border: 1px solid #F7E612;   
+    padding:  1.2rem 1rem;
+    position: relative;
+ }
+.info-content span.glyphicon {
+    background: #008B8B;
+    position: absolute;
+    top:-0.2rem;
+    left:-5.3rem;
+    font-size: 0.9em;
+    color: #fff;    
+    padding: 1.1em;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    transition: .5s all;
+    
+ }
+ .info-content h5:hover span.glyphicon {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    color: #F7E612;
+ }
+
+
+
+#info-details>section:nth-child(even) .info-content p {
+    color: #fff;
+}
+#info-details>section:nth-child(odd) .info-content p {
+    color: #333;
+}
+#info-details>section:nth-child(odd) h5 {
+    color: #000;
+}
+
+
+.info-content p {
+    text-align: left;
+    text-indent: 0;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #fff;
+}
+
+.progress {
+    height: 10px;
+    margin-bottom: 2.2em;
+    background-color: #2F2C06;
+}
+
+.progress-bar {
+    background-color: #766E04;
+}
+
+.bar-grids h6 {
+    font-size: 1.1em;
+    color: #fff;
+    margin-bottom: 0.6em;
+}
+
+.bar-grids h6 span {
+    float: right;
+    font-size: 0.9em;
+}
+
+#contact input,
+#contact textarea {
+    width: 99%;
+    color: #000;
+    background: none;
+    outline: none;
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    padding: .8rem 1rem;
+    border: 1px solid #8C8C8C;
+ 
+}
+#contact textarea{
+    height: 100px;
+}
+#contact input[type="submit"] {
+    outline: none;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.6rem;
+    margin: 1em 0 0 0;
+    -webkit-appearance: none;
+    background: #008B8B;
+    border: 2px solid #008B8B;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    width: 100%;
+}
+#contact  input[type="submit"]:hover {
+    background: none;
+    color: #008B8B;
+}
+footer{
+    padding: 2rem 0;
+    text-align: center;
+    background: #1F1F1F;
+    font-size: 1.8rem;
+}
+
+#back-top{
+    display: none;
+    position: fixed;
+    bottom: 1rem;
+    right:2rem;
+    padding: 1.1rem;
+    border:3px solid #008B8B;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+#back-top a span{
+    font-size: 2rem;
+    color: #008B8B;
+}
+ /* info-details end信息详情  */
+ @media (min-width:768px) {
+    .my-navbar .navbar-nav {
+        float: none;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+    }
+    .info-title {
+        margin-left: 8.33333333%;
+        
+    }
+    .info-items div.row:nth-child(even) .info-title h4 {
+        float: right;
+        margin-right: 6rem;
+      }
+    .info-items div.row:nth-child(odd) .info-title {
+        float: right;
+       
+    }
+    .info-content {
+        width: 41.66666667%;
+        float: left;
+        background: rgba(247, 197, 106, 0.35);
+        border-radius: 5px;
+        -webkit-transition: .5s all;
+        -moz-transition: .5s all;
+        transition: .5s all;
+        
+    }
+
+    .info-items div.row:nth-child(odd) .info-content {
+          margin-left: 8.33333333%;
+         
+    }
+   
+
+   .info-content span.glyphicon{
+       left:-4.9rem;
+   }
+   .info-content:hover {
+       -webkit-transform: scale(1.05);
+       -moz-transform: scale(1.05);
+       transform: scale(1.05);
+       -o-transform: scale(1.05);
+       -ms-transform: scale(1.05);
+   }
+
+ }
